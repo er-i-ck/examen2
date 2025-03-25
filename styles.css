@@ -1,0 +1,78 @@
+/* Fondo con cielo y césped */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #87CEEB, #4CAF50); /* Cielo y césped */
+    overflow: hidden;
+}
+  
+#game {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    border-radius: 15px;
+    border: 4px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos del título */
+h1 {
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+/* Puntuación y estado */
+#status, #score, #highscore {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+}
+
+/* Hitbox mejorada */
+#hitbox {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+/* Pelota mejorada */
+#ball {
+    width: 110px;
+    height: 110px;
+    background: radial-gradient(circle, #FFD700, #FFA500); /* Amarillo con efecto */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: ball-shadow 0.5s infinite alternate;
+}
+
+/* Animación de sombra en la pelota */
+@keyframes ball-shadow {
+    from {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    to {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+    }
+}
+

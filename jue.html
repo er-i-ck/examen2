@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Nominada</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game">
+    <h1>⚽ Juego de Nominada ⚽</h1>
+    <p id="status">Haz clic en el balón para comenzar.</p>
+    <p id="score">Puntuación: 0</p>
+    <p id="highscore">Última puntuación: 0</p>
+    <div id="hitbox" onclick="nominateBall()">
+      <div id="ball"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
